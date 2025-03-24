@@ -24,7 +24,7 @@ export default async function fetchCharacters() {
   const data = await response.json();
   console.log("data: ", data);
 
-  // return data;
+  cardContainer.innerHTML = "";
   data.results.forEach((character) => {
     const characterCard = CharacterCard(character);
     cardContainer.appendChild(characterCard);
