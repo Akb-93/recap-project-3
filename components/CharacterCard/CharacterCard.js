@@ -1,8 +1,9 @@
 import fetchCharacters from "./index.js";
+fetchCharacters();
 
 const cardContainer = document.querySelector('[data-js="card-container"]');
 
-export function createCharacterCard() {
+export function CharacterCard(character) {
   const newCard = document.createElement("li");
   newCard.classList.add("card");
 
@@ -28,5 +29,6 @@ export function createCharacterCard() {
     </div>
   `;
 
-  cardContainer.append(newCard);
+  return newCard;
 }
+console.log(newCard);
