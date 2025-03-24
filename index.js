@@ -1,6 +1,6 @@
 console.clear();
-
 import { CharacterCard } from "./components/CharacterCard/CharacterCard.js";
+// import { SearchBar } from "./components/SearchBar/SearchBar.js";
 
 const cardContainer = document.querySelector('[data-js="card-container"]');
 const searchBarContainer = document.querySelector(
@@ -15,11 +15,11 @@ const pagination = document.querySelector('[data-js="pagination"]');
 // States
 let maxPage = 1;
 let page = 1;
-const searchQuery = "";
+let searchQuery = "";
 
 // Fetch API function
 export default async function fetchCharacters() {
-  const url = `https://rickandmortyapi.com/api/character?page=${page}`;
+  const url = `https://rickandmortyapi.com/api/character?page=${page}&name=${searchQuery}`;
 
   try {
     const response = await fetch(url);
@@ -52,6 +52,15 @@ nextButton.addEventListener("click", () => {
     page++;
     fetchCharacters();
   }
+});
+
+searchBar.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
+  searchQuery = data.query;
+  page = 1;
+  fetchCharacters();
 });
 
 fetchCharacters();
