@@ -59,10 +59,8 @@ searchBar.addEventListener("submit", (event) => {
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
   searchQuery = data.query;
-  console.log(data, "data");
-  console.log("char", CharacterCard);
   page = 1;
-  CharacterCard(page, searchQuery);
+  fetchCharacters();
 });
 
 fetchCharacters();
