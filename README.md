@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# recap-project-3
-=======
 # Recap Project 3: Rick and Morty App
 
 In this project, you will create a single-page app for browsing all characters from the popular TV show **Rick and Morty**.
@@ -161,4 +158,3 @@ Run `npm run start` to start a development server and open [localhost:3000](http
 
 > Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
 > Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
->>>>>>> bb5252d ( "initial commit")
