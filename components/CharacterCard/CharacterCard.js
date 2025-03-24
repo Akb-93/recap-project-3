@@ -1,6 +1,6 @@
-import { fetchCharacters } from "./";
+import fetchCharacters from "./index.js";
 
-const cardContainer = document.querySelector("maincard-container");
+const cardContainer = document.querySelector('[data-js="card-container"]');
 
 export function createCharacterCard() {
   const newCard = document.createElement("li");

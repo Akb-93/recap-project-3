@@ -18,7 +18,7 @@ console.clear();
 // Fetch API first 20 characters
 const url = "https://rickandmortyapi.com/api/character";
 
-async function fetchCharacters() {
+export default async function fetchCharacters() {
   const response = await fetch(url);
   const data = await response.json();
   console.log("data: ", data);
