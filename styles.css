@@ -16,17 +16,37 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: var(--font-family);
   color: var(--color-primary);
   padding: 20px;
+  background-color: black;
 }
 
 main {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: rgb(216, 255, 232);
+  box-shadow: 0px 0px 100px 30px rgb(216, 255, 232);
+  border: solid rgb(216, 255, 232);
 }
 
 .title {
-  padding: 10px 0;
+  color: rgb(52, 196, 148);
+  padding: 20px 0;
+}
+.title:hover {
+  color: rgb(63, 178, 130);
+  font-size: 2.01rem;
+  animation: forwards;
+  text-shadow: 10px 10px 10px 100px rgb(203, 255, 236);
+  padding: 20px 0;
+}
+.footer--nav {
+  position: sticky;
+  bottom: 0;
+  background-color: white;
 }
