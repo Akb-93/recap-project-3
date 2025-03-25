@@ -1,5 +1,6 @@
 .navigation {
-  height: 30px;
+  position: sticky;
+  height: 50px;
   display: grid;
   grid-template-columns: 100px 100px 100px;
 }

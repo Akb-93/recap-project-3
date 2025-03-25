@@ -2,8 +2,10 @@
   margin-bottom: 10px;
 }
 .card {
+  margin-top: 2rem;
   width: 300px;
   background-color: var(--color-secondary);
+  border-radius: 30px;
 }
 
 .card__info {
