@@ -25,6 +25,11 @@ export default async function fetchCharacters() {
 
   try {
     const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(
+        `Error! API url not found! Status code ${response.status}`
+      );
+    }
     const data = await response.json();
 
     maxPage = data.info.pages;
@@ -38,7 +43,7 @@ export default async function fetchCharacters() {
       cardContainer.appendChild(characterCard);
     });
   } catch (error) {
-    console.error("Error! " + error);
+    console.error("Error! Failed to fetch characters " + error);
   }
 }
 
