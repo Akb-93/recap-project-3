@@ -25,3 +25,18 @@
 li {
   list-style: none;
 }
+
+.card__title {
+  margin: 0.2em;
+  color: rgb(17, 135, 96);
+}
+
+.card__info-title {
+  margin: 0.2em;
+  color: rgb(17, 135, 96);
+}
+
+.card__info-description {
+  margin: 0.2em;
+  color: rgb(17, 135, 96);
+}

@@ -35,18 +35,27 @@ main {
 }
 
 .title {
-  color: rgb(52, 196, 148);
+  color: rgb(28, 241, 170);
   padding: 20px 0;
+  margin: 1em;
 }
 .title:hover {
-  color: rgb(63, 178, 130);
-  font-size: 2.01rem;
+  color: rgb(53, 227, 155);
+  font-size: 3.3em;
   animation: forwards;
   text-shadow: 10px 10px 10px 100px rgb(203, 255, 236);
   padding: 20px 0;
+  margin: 1em;
 }
 .footer--nav {
   position: sticky;
   bottom: 0;
   background-color: white;
+}
+
+h1 {
+  font-family: "Bangers", sans-serif;
+  font-size: 3em;
+  color: #00ff99;
+  text-shadow: 3px 3px 5px rgba(0, 255, 0, 0.7);
 }
