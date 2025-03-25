@@ -1,4 +1,6 @@
 .search-bar-container {
+  position: sticky;
+
   width: 300px;
 }
 
