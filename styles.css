@@ -8,8 +8,7 @@
   margin: 0;
   padding: 0;
 }
-h1 {
-}
+
 :root {
   --color-primary: rgb(51, 51, 51);
   --color-secondary: #f6f6f6;
@@ -36,10 +35,16 @@ main {
 }
 
 .title {
-  color: aquamarine;
+  color: rgb(52, 196, 148);
   padding: 20px 0;
 }
-
+.title:hover {
+  color: rgb(63, 178, 130);
+  font-size: 2.01rem;
+  animation: forwards;
+  text-shadow: 10px 10px 10px 100px rgb(203, 255, 236);
+  padding: 20px 0;
+}
 .footer--nav {
   position: sticky;
   bottom: 0;
